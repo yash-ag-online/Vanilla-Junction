@@ -1,0 +1,208 @@
+:root {
+    /* Colors */
+    --foreground-color: #111;
+    --background-color: #fff;
+    --primary: #544339;
+    --secondary: #8a6c5f;
+    --tertiary: #bfa384;
+    --muted: #e0d9cf;
+    --accent: #f5e9d3;
+
+    /* Border Radiuses */
+    --rounded-sm: 0.2rem;
+
+    /* Font sizes */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--foreground-color);
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 64rem;
+    margin: 0 auto;
+    min-height: 100dvh;
+    padding: 0 1rem;
+}
+
+header {
+    width: 100%;
+    height: 3.4rem;
+    padding-bottom: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    inset: auto 0;
+    top: 0;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--foreground-color);
+    z-index: 99;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        img {
+            height: 2rem;
+        }
+
+        p {
+            font-size: var(--text-lg);
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .button {
+            position: relative;
+
+            .text {
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+            .cart-quantity {
+                background-color: var(--background-color);
+                width: 1.5rem;
+                height: 1.5rem;
+                font-size: var(--text-sm);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                position: absolute;
+                right: -0.5rem;
+                bottom: -0.5rem;
+                border: 2px solid var(--primary);
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    flex: 1;
+    padding: 0.6rem 0;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    height: 3.4rem;
+    padding-right: 0.2rem;
+    border-top: 1px solid var(--foreground-color);
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+
+    &:has(.icon) {
+        .icon {
+            height: 1.2rem;
+        }
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--primary);
+    color: var(--background-color);
+    border-radius: var(--rounded-sm);
+    border: none;
+    box-shadow: none;
+
+    .text {
+        color: var(--background-color);
+    }
+
+    &:has(.icon) {
+        .icon {
+            height: 1rem;
+        }
+    }
+
+    &:hover {
+        background-color: var(--secondary);
+        transition: color 1s ease-in-out;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        /* Start at 0 degrees rotation */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* End with a full 360 degrees rotation */
+    }
+}
+
+.select-container {
+    position: relative;
+    /* Essential for absolute positioning of the arrow */
+    display: inline-block;
+}
+
+.select-container select {
+    /* Hide the native arrow from Step 1 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+    /* Space for the custom arrow */
+    /* other styles like border, background, etc. */
+}
+
+.select-container::after {
+    content: "\21AF";
+    /* Unicode character for a down arrow */
+    position: absolute;
+    right: 10px;
+    /* Adjust horizontal position */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Fine-tune vertical alignment */
+    pointer-events: none;
+    /* Allows clicks to pass through the arrow to the select box */
+    /* Add color, font-size, etc. */
+}

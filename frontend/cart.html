@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Junction - Cart</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div id="root" class="root">
+        <!-- Header -->
+        <header>
+            <a href="index.html" class="logo">
+                <img src="./images/logo.png" alt="Vanilla Junction Logo">
+                <p>Vanilla Junction</p>
+            </a>
+
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a href="cart.html" class="button"><img src="./icons/cart.svg" class="icon"
+                                alt="cart icon"><span class="text">Cart</span><span class="cart-quantity"></span></a>
+                    </li>
+                    <li>
+                        <a href="account.html" class="button"><img src="./icons/account.svg" class="icon"
+                                alt="account icon"><span class="text">Account</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <div class="cart-items-container">
+                <!-- Cart Item Cards -->
+            </div>
+
+            <div class="total">
+                <h3>Bill:</h3>
+
+                <!-- Table -->
+                <table>
+                    <thead>
+                        <th>Description</th>
+                        <th>Total</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total Price</td>
+                            <td id="total-price"></td>
+                        </tr>
+                        <tr>
+                            <td>Total Discount</td>
+                            <td id="total-discount"></td>
+                        </tr>
+                        <tr>
+                            <td>To Pay</td>
+                            <td id="to-pay"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="order-details-container">
+                <h3>Order Details:</h4>
+
+                    <div class="error badge">some error</div>
+
+                    <!-- Delivery Details Form -->
+                    <form class="delivery-details-form">
+                        <fieldset>
+                            <div>
+                                <label for="phone">Your Phone</label>
+                                <input required type="tel" name="phone" id="phone" placeholder="+911234567890">
+                            </div>
+                            <div>
+                                <label for="pin-code">Your Pin Code</label>
+                                <div class="select-container">
+                                    <select name="pin-code" id="pin-code">
+                                        <option value="390001">390001 - Vadodara HO</option>
+                                        <option value="390002">390002 - Fateganj</option>
+                                        <option value="390004">390004 - Pratapnagar</option>
+                                        <option value="390007">
+                                            390007 - Alkapuri / Vasna Road
+                                        </option>
+                                        <option value="390009">390009 - Fatehgunj</option>
+                                        <option value="390010">390010 - Vadsar</option>
+                                        <option value="390011">390011 - Manjalpur</option>
+                                        <option value="390016">390016 - Panchvati</option>
+                                        <option value="390018">390018 - Karelibaug</option>
+                                        <option value="390020">
+                                            390020 - Sayajigunj / Akota / Railway Station
+                                        </option>
+                                        <option value="390021">390021 - Gotri</option>
+                                        <option value="390022">390022 - Virod</option>
+                                        <option value="390023">390023 - Subhanpura</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="street-number">Street Number</label>
+                                <input type="text" id="street-number" name="street-number">
+                            </div>
+                            <div>
+                                <label for="street-name">Street Name</label>
+                                <input type="text" id="street-name" name="street-name">
+                            </div>
+                            <div>
+                                <label for="house-number">House Number</label>
+                                <input type="text" id="house-number" name="house-number">
+                            </div>
+                            <button class="button submit-btn" type="submit">
+                                Proceed With Payment
+                            </button>
+                        </fieldset>
+                    </form>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Yash Agrawal | Full-stack software engineer</p>
+            <a href="https://github.com/yash-ag-online" target="_blank" class="icon-link"><img src="./icons/github.svg"
+                    class="icon" alt="github icon"></a>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="./global.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./cart.js"></script>
+</body>
+
+</html>
