@@ -1,3 +1,5 @@
+![Banner](./Banner.png)
+
 # Vanilla-Junction
 
 This case study is a part of a learning journey for full-stack software
