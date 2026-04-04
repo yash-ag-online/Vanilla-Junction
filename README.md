@@ -5,7 +5,7 @@
 This case study is a part of a learning journey for full-stack software
 development using MERN Stack, and this case study is divided into 4 phases:
 
-1. **Phase 1** - Designing UML diagrams to properly **map out** the system and
+1. **Phase 1** – Designing UML diagrams to properly **map out** the system and
    **define** goals.
 2. **Phase 2** – Development of the frontend using only HTML, CSS, and
    JavaScript. without using any third-party libraries or frameworks.
