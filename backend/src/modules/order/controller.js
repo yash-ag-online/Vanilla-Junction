@@ -123,8 +123,6 @@ export const createOrder = asyncHandler(async (req, res) => {
 export const getAllOrders = asyncHandler(async (req, res) => {
   const { filter } = req.query;
 
-  console.log(filter);
-
   let orders = [];
 
   if (req.admin.role === 'Admin') {
@@ -173,7 +171,11 @@ export const acceptDelivery = asyncHandler(async (req, res) => {
     return res.status(statusCodes.NOT_FOUND).json(new ApiError(statusCodes.NOT_FOUND, 'Order not found!'));
   }
 
-  if (order.orderStatus !== 'Pending') {
+  if (
+    order.orderStatus === 'Delivered' ||
+    order.orderStatus === 'Out for delivery' ||
+    order.orderStatus === 'Canceled'
+  ) {
     return res.status(statusCodes.BAD_REQUEST).json(new ApiError(statusCodes.BAD_REQUEST, 'Order is not pending!'));
   }
 

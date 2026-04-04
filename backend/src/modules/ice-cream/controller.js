@@ -85,7 +85,8 @@ export const updateIceCreamById = asyncHandler(async (req, res) => {
   }
 
   for (const key in parsedBody.data) {
-    if (parsedBody.data[`${key}`]) icecream[`${key}`] = parsedBody.data[`${key}`];
+    if (parsedBody.data[`${key}`] !== null && parsedBody.data[`${key}`] !== undefined)
+      icecream[`${key}`] = parsedBody.data[`${key}`];
   }
 
   await icecream.save();

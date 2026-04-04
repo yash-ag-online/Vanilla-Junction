@@ -5,7 +5,7 @@ export const iceCreamSchema = z.object({
   price: z.number().max(1000).min(0),
   discount: z.number().max(100).min(0).optional(),
   description: z.string().max(500).optional(),
-  image: z.url().optional(),
+  image: z.union([z.url(), z.string().length(0)]).optional(),
 });
 
 export const iceCreamUpdateSchema = z.object({
@@ -13,5 +13,5 @@ export const iceCreamUpdateSchema = z.object({
   price: z.number().max(1000).min(0).optional(),
   discount: z.number().max(100).min(0).optional(),
   description: z.string().max(500).optional(),
-  image: z.url().optional(),
+  image: z.union([z.url(), z.string().length(0)]).optional(),
 });

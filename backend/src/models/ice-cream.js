@@ -29,6 +29,8 @@ const iceCreamSchema = new Schema(
       type: String,
       match: [/^(https?):\/\/[^ "]+$/, 'Invalid image url.'],
       default: 'https://placehold.co/400',
+      trim: true,
+      set: (v) => (v === '' ? undefined : v),
     },
   },
   { timestamps: true },

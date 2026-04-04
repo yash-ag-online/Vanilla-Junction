@@ -27,7 +27,7 @@ app.use(morgan(`:method :url :status :res[content-length] - :response-time ms`))
 app.use(
   cors({
     origin: envValues.origins, // EX: [ 'http://localhost:5173', 'http://localhost:5500' ]
-    methods: ['POST', 'GET', 'PATCH', 'OPTION', 'PUT'],
+    methods: ['POST', 'GET', 'PATCH', 'OPTION', 'PUT', 'DELETE'],
     allowedHeaders: ['Authorization', 'Content-Type'],
     credentials: true,
   }),

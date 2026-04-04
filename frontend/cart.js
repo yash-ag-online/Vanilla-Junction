@@ -90,7 +90,7 @@ form.addEventListener("submit", async (e) => {
     },
   });
 
-  const response = await fetch("http://127.0.0.1:3000/api/v1/orders/create", {
+  const response = await fetch("http://127.0.0.1:3000/api/v1/orders", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -156,7 +156,7 @@ form.addEventListener("submit", async (e) => {
         "ondismiss": async function () {
           console.log("Payment modal closed by user");
           await fetch(
-            `http://127.0.0.1:3000/api/v1/orders/${result.data.order._id}/cancle`,
+            `http://127.0.0.1:3000/api/v1/orders/${result.data.order._id}/cancel`,
             {
               method: "POST",
               headers: {
