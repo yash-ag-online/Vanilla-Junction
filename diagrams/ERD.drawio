@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36">
+  <diagram name="Page-1" id="iB6wDaqyWDsAROhR85tA">
+    <mxGraphModel dx="630" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-20" edge="1" parent="1" source="WcFeDVx4-7kPH1x9VrtQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERzeroToMany;startFill=0;startSize=10;endSize=10;" target="WcFeDVx4-7kPH1x9VrtQ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-26" edge="1" parent="1" source="WcFeDVx4-7kPH1x9VrtQ-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;endSize=10;startSize=10;startArrow=ERmandOne;startFill=0;edgeStyle=orthogonalEdgeStyle;" target="WcFeDVx4-7kPH1x9VrtQ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-28" edge="1" parent="1" source="WcFeDVx4-7kPH1x9VrtQ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmandOne;endFill=0;startSize=10;endSize=10;startArrow=ERmandOne;startFill=0;" target="WcFeDVx4-7kPH1x9VrtQ-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="520" />
+              <mxPoint x="1100" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Customer" vertex="1">
+          <mxGeometry height="150" width="160" x="480" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-2" parent="WcFeDVx4-7kPH1x9VrtQ-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;+ID [PK]&lt;/div&gt;+Phone Number&lt;br&gt;+Saved Address&lt;br&gt;+Refresh Token&lt;div&gt;+Login OTP&lt;/div&gt;&lt;div&gt;+Order History [FK[]]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-30" edge="1" parent="1" source="WcFeDVx4-7kPH1x9VrtQ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;endSize=10;startArrow=ERzeroToMany;startFill=0;startSize=10;" target="WcFeDVx4-7kPH1x9VrtQ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-4" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Admin" vertex="1">
+          <mxGeometry height="140" width="160" x="840" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-5" parent="WcFeDVx4-7kPH1x9VrtQ-4" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;+ID [PK]&lt;/div&gt;+Name&lt;br&gt;+Role&lt;br&gt;+Password&lt;div&gt;+Refresh Token&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-6" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Ice Cream" vertex="1">
+          <mxGeometry height="150" width="160" x="480" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-7" parent="WcFeDVx4-7kPH1x9VrtQ-6" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;+ID [PK]&lt;/div&gt;+Name&lt;br&gt;+Price&lt;br&gt;+Discount&amp;nbsp;&lt;div&gt;+Image URL&lt;/div&gt;&lt;div&gt;+Description&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-34" edge="1" parent="1" source="WcFeDVx4-7kPH1x9VrtQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=10;endSize=10;startArrow=ERzeroToOne;startFill=0;endArrow=ERoneToMany;endFill=0;" target="WcFeDVx4-7kPH1x9VrtQ-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="475" />
+              <mxPoint x="790" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-8" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Order" vertex="1">
+          <mxGeometry height="240" width="160" x="840" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-9" parent="WcFeDVx4-7kPH1x9VrtQ-8" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;+ID [PK]&lt;/div&gt;+Total Price&lt;br&gt;+Total Discount&lt;br&gt;+Order Status&lt;div&gt;+Delivery Status&lt;/div&gt;&lt;div&gt;+Delivery Date&lt;/div&gt;&lt;div&gt;+Customer ID [FK]&lt;/div&gt;&lt;div&gt;+Delivery Person ID [FK]&lt;/div&gt;&lt;div&gt;+Payment ID[FK]&lt;/div&gt;&lt;div&gt;+Items [FK[]]&lt;/div&gt;&lt;div&gt;+Delivery OTP&lt;/div&gt;&lt;div&gt;+Delivery Address&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-10" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Payment" vertex="1">
+          <mxGeometry height="200" width="200" x="1160" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-11" parent="WcFeDVx4-7kPH1x9VrtQ-10" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;+ID [PK]&lt;/div&gt;+Status&lt;br&gt;+Amount&lt;br&gt;+Payee ID [FK]&lt;div&gt;+Order ID [FK]&lt;/div&gt;&lt;div&gt;+Transaction ID&lt;/div&gt;&lt;div&gt;+Razorpay Order ID&lt;/div&gt;&lt;div&gt;+&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Razorpay Payment ID&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Razorpay Payment Signature&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Buy" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Place" vertex="1">
+          <mxGeometry height="30" width="60" x="750" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Require" vertex="1">
+          <mxGeometry height="30" width="60" x="1050" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Manage" vertex="1">
+          <mxGeometry height="30" width="60" x="930" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-32" edge="1" parent="1" source="WcFeDVx4-7kPH1x9VrtQ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;endSize=10;startArrow=ERzeroToOne;startFill=0;startSize=10;" target="WcFeDVx4-7kPH1x9VrtQ-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="290" as="sourcePoint" />
+            <mxPoint x="930" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Manage" vertex="1">
+          <mxGeometry height="30" width="60" x="670" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="WcFeDVx4-7kPH1x9VrtQ-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Contains" vertex="1">
+          <mxGeometry height="30" width="60" x="710" y="440" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
